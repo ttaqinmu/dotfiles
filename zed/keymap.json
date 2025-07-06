@@ -1,0 +1,50 @@
+// TODO
+// 1. Toggle left dock
+// 2. Telescope
+// 3. LazyGit
+// 4. Switch tabs
+
+[
+  {
+    "context": "Editor && vim_mode == insert && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-l": "editor::ConfirmCompletion",
+      "enter": "editor::ConfirmCodeAction"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && inline_completion && !showing_completions",
+    "bindings": {
+      "ctrl-l": "editor::AcceptInlineCompletion"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "shif-k": "editor::ShowSignatureHelp",
+      "g-d": "editor::GoToDeclaration",
+      "g-D": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space f": ["tasl::Spawn", { "task_name": "search:project" }],
+      "space x": ["workspace::SendKeystrokes", "shift-w shift-q"],
+      "space t": ["workspace::SendKeystrokes", "ctrl-tab"],
+      "ctrl-f": "buffer_search::Deploy"
+    }
+  }
+  // {
+  //   "context": "Editor",
+  //   "bindings": {
+  //     "cmd-p": [
+  //       "task::Spawn",
+  //       { "task_name": "file_finder", "reveal_target": "center" }
+  //     ]
+  //   }
+  // }
+]
