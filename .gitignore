@@ -7,3 +7,17 @@
 !/zed/
 !/tmux/
 !/kitty/
+
+lazy-lock.json
+
+/dconf
+/environment.d
+/git
+/gtk-3.0
+/pulse
+/systemd
+/Thunar
+/xfce4
+
+user-dirs.locale
+user-dirs.dirs
