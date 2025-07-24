@@ -7,6 +7,11 @@
 !/zed/
 !/tmux/
 !/kitty/
+!/home-manager/
+!/nix/
+!/waybar/
+!/hypr/
+!/nixos/
 
 lazy-lock.json
 
