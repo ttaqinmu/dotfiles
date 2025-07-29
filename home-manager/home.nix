@@ -49,6 +49,8 @@
     pkgs.texlivePackages.biblatex
     pkgs.texlivePackages.biblatex-bath
     pkgs.deadbeef
+    pkgs.yazi
+    pkgs.postman
 
     # Basic
     pkgs.htop
@@ -62,6 +64,7 @@
     pkgs.openssl
     pkgs.ripgrep
     pkgs.lazygit
+    pkgs.ngrok
 
     pkgs.wmctrl
 

@@ -2,7 +2,7 @@
   "layer": "bottom",
   "position": "top",
   "height": 40,
-  "spacing": 2,
+  "spacing": 10,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
@@ -10,41 +10,19 @@
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": [],
   "modules-right": [
+    "tray",
     "cpu",
     "memory",
     "pulseaudio",
     "clock",
-    "clock#simpleclock",
-    "tray",
-    "custom/notification",
     "custom/power"
   ],
-  "custom/spotify": {
-    "format": "  {}",
-    "return-type": "json",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "spotifatius toggle-liked",
-    "on-click-middle": "playerctl -p spotify next",
-    "exec": "spotifatius monitor"
-  },
-  "mpris": {
-    "player": "spotify",
-    "dynamic-order": ["artist", "title"],
-    "format": "{player_icon} {dynamic}",
-    "format-paused": "{status_icon} <i>{dynamic}</i>",
-    "status-icons": {
-      "paused": ""
-    },
-    "player-icons": {
-      "default": ""
-    }
-  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",
-    "all-outputs": true,
-    "disable-scroll": false,
-    "active-only": false
+    "all-outputs": false,
+    "disable-scroll": true,
+    "active-only": true
   },
   "hyprland/window": {
     "format": "{title}"
@@ -53,12 +31,8 @@
     "show-passive-items": true,
     "spacing": 10
   },
-  "clock#simpleclock": {
-    "tooltip": false,
-    "format": " {:%H:%M}"
-  },
   "clock": {
-    "format": " {:L%a %d %b}",
+    "format": " {:L%a %d %b %H:%M}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
@@ -98,18 +72,5 @@
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
     "format": "⏻"
-  },
-  "custom/notification": {
-    "escape": true,
-    "exec": "swaync-client -swb",
-    "exec-if": "which swaync-client",
-    "format": "{icon}",
-    "format-icons": {
-      "none": "󰅺",
-      "notification": "󰡟"
-    },
-    "on-click": "sleep 0.1 && swaync-client -t -sw",
-    "return-type": "json",
-    "tooltip": false
   }
 }
