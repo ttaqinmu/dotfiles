@@ -8,8 +8,9 @@ local options = {
     lua = { "stylua" },
     python = { "black" },
     rust = { "rustfmt" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
+    css = { "prettier" },
+    html = { "prettier" },
+    svelte = { "prettier" },
   },
 
   format_on_save = {

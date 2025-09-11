@@ -34,13 +34,11 @@
     pkgs.inkscape
     pkgs.vlc
     pkgs.qbittorrent
-    pkgs.zed-editor
     pkgs.openshot-qt
     pkgs.flameshot
     pkgs.filezilla
     pkgs.bottles
     pkgs.helvum
-    pkgs.guitarix
     pkgs.evince
     pkgs.krita
     pkgs.audacity
@@ -51,11 +49,19 @@
     pkgs.deadbeef
     pkgs.yazi
     pkgs.postman
+    pkgs.p7zip
+    pkgs.xarchiver
+
+    # Audio
+    pkgs.jack2
+    pkgs.qjackctl
+    pkgs.helvum
 
     # Basic
     pkgs.htop
     pkgs.rust-analyzer
     pkgs.cargo
+    pkgs.cargo-binstall
     pkgs.nodejs_24
     pkgs.python311
     pkgs.gcc
@@ -65,7 +71,7 @@
     pkgs.ripgrep
     pkgs.lazygit
     pkgs.ngrok
-
+    pkgs.uv
     pkgs.wmctrl
 
     # Fonts 
@@ -77,8 +83,13 @@
     pkgs.nerd-fonts.zed-mono
     pkgs.nerd-fonts.fira-code
     pkgs.nerd-fonts.fira-mono
-  ];
 
+    pkgs.xorg.libX11
+    pkgs.xorg.libXext
+    pkgs.xorg.libXrender
+    pkgs.xorg.libxcb
+  ];
+  
   programs.git = {
     enable = true;
     userName = "M Imam Muttaqin";
