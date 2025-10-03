@@ -16,9 +16,8 @@
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "version": "2"
+      "model": "gpt-5"
+    }
   },
   "theme": "One Dark Mod",
   "vim_mode": true,
@@ -58,6 +57,39 @@
         }
       },
       "language_servers": ["pyright"]
+    },
+    "TypeScript": {
+      "tab_size": 2,
+      "language_servers": ["typescript-language-server", "!vtsls", "..."],
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."],
+      "tab_size": 2
+    },
+    "JavaScript": {
+      "tab_size": 2,
+      "language_servers": ["typescript-language-server", "!vtsls", "..."],
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "Svelte": {
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
     }
   }
 }

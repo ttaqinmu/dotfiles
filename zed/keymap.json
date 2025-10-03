@@ -9,42 +9,41 @@
     "context": "Editor && vim_mode == insert && (showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
-      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-k": "editor::ContextMenuPrevious",
       "ctrl-l": "editor::ConfirmCompletion",
       "enter": "editor::ConfirmCodeAction"
     }
   },
   {
-    "context": "Editor && vim_mode == insert && inline_completion && !showing_completions",
+    "context": "Editor && edit_prediction",
     "bindings": {
-      "ctrl-l": "editor::AcceptInlineCompletion"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      "shif-k": "editor::ShowSignatureHelp",
-      "g-d": "editor::GoToDeclaration",
-      "g-D": "editor::GoToDefinition"
+      "ctrl-l": "editor::AcceptEditPrediction"
     }
   },
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "space g": ["task::Spawn", { "task_name": "lazygit" }],
-      "space f": ["tasl::Spawn", { "task_name": "search:project" }],
+      "space g g": [
+        "task::Spawn",
+        {
+          "task_name": "lazygit",
+          "reveal_target": "center"
+        }
+      ],
+      "shift-k": "editor::Hover",
       "space x": ["workspace::SendKeystrokes", "shift-w shift-q"],
-      "space t": ["workspace::SendKeystrokes", "ctrl-tab"],
-      "ctrl-f": "buffer_search::Deploy"
+      "space t": ["workspace::SendKeystrokes", "ctrl-tab"]
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "tab": "pane::ActivateNextItem",
+      "shift-tab": "pane::ActivatePreviousItem",
+      "space f": [
+        "task::Spawn",
+        { "task_name": "file_finder", "reveal_target": "center" }
+      ]
     }
   }
-  // {
-  //   "context": "Editor",
-  //   "bindings": {
-  //     "cmd-p": [
-  //       "task::Spawn",
-  //       { "task_name": "file_finder", "reveal_target": "center" }
-  //     ]
-  //   }
-  // }
 ]
