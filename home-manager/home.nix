@@ -5,6 +5,9 @@
     config = {
       allowUnfree = true;
       allowUnfreePredicate = (_: true);
+      permittedInsecurePackages = [
+      	"qtwebengine-5.15.19"
+      ];
     };
   };
 
@@ -29,6 +32,8 @@
     pkgs.xfce.thunar-archive-plugin
     pkgs.slack
     pkgs.wechat
+    pkgs.zed-editor
+    pkgs.gnome-keyring
     pkgs.obs-studio
     pkgs.gimp
     pkgs.inkscape
