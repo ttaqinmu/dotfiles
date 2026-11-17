@@ -1,5 +1,13 @@
 return {
   {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = {
+      indent = { highlight = "IblIndent" },
+      scope = { highlight = "IblScope" },
+    },
+  },
+
+  {
     "stevearc/conform.nvim",
     opts = require "configs.conform",
   },
@@ -71,14 +79,10 @@ return {
     ft = { "toml" },
     config = function()
       require("crates").setup {
-        completion = {
-          cmp = {
-            enabled = true,
-          },
+        lsp = {
+          enabled = true,
+          completion = true,
         },
-      }
-      require("cmp").setup.buffer {
-        sources = { { name = "crates" } },
       }
     end,
   },
@@ -189,21 +193,13 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "vim",
-        "lua",
-        "vimdoc",
-        "html",
-        "css",
-        "rust",
-        "python",
-        "svelte",
-        "typescript",
-        "javascript",
-        "nix",
-        "tsx",
-      },
-    },
+    config = function()
+      -- Treesitter's main branch uses Neovim's built-in highlighter.
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function(args)
+          pcall(vim.treesitter.start, args.buf)
+        end,
+      })
+    end,
   },
 }

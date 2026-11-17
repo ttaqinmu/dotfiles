@@ -4,53 +4,53 @@
 local M = {}
 
 M.base_30 = {
-  white = "#abb2bf",
-  darker_black = "#1b1f27",
-  black = "#1e222a", --  nvim bg
-  black2 = "#252931",
-  one_bg = "#282c34", -- real bg of onedark
-  one_bg2 = "#353b45",
-  one_bg3 = "#373b43",
-  grey = "#42464e",
-  grey_fg = "#565c64",
-  grey_fg2 = "#6f737b",
-  light_grey = "#6f737b",
-  red = "#e06c75",
+  white = "#c8ccd4",
+  darker_black = "#141619",
+  black = "#17191D",
+  black2 = "#1d2127",
+  one_bg = "#202329",
+  one_bg2 = "#2b3038",
+  one_bg3 = "#2e343e",
+  grey = "#414754",
+  grey_fg = "#696b77",
+  grey_fg2 = "#838994",
+  light_grey = "#878e98",
+  red = "#d07277",
   baby_pink = "#DE8C92",
   pink = "#ff75a0",
-  line = "#31353d", -- for lines like vertsplit
-  green = "#98c379",
+  line = "#262b32", -- for lines like vertsplit
+  green = "#a1c181",
   vibrant_green = "#7eca9c",
   nord_blue = "#81A1C1",
-  blue = "#61afef",
-  yellow = "#e7c787",
+  blue = "#74ade8",
+  yellow = "#dfc184",
   sun = "#EBCB8B",
-  purple = "#de98fd",
+  purple = "#c678dd",
   dark_purple = "#c882e7",
   teal = "#519ABA",
-  orange = "#fca2aa",
-  cyan = "#a3b8ef",
-  statusline_bg = "#22262e",
-  lightbg = "#2d3139",
-  pmenu_bg = "#61afef",
-  folder_bg = "#61afef",
+  orange = "#bf956a",
+  cyan = "#6eb4bf",
+  statusline_bg = "#1e2128",
+  lightbg = "#2a2f38",
+  pmenu_bg = "#74ade8",
+  folder_bg = "#74ade8",
 }
 
 M.base_16 = {
-  base00 = "#1e222a",
-  base01 = "#353b45",
-  base02 = "#3e4451",
-  base03 = "#545862",
-  base04 = "#565c64",
-  base05 = "#abb2bf",
-  base06 = "#b6bdca",
+  base00 = "#17191D",
+  base01 = "#202329",
+  base02 = "#2b3038",
+  base03 = "#696b77",
+  base04 = "#878e98",
+  base05 = "#bfc4cd",
+  base06 = "#c8ccd4",
   base07 = "#c8ccd4",
-  base08 = "#e06c75",
-  base09 = "#d19a66",
+  base08 = "#d07277",
+  base09 = "#bf956a",
   base0A = "#e5c07b",
-  base0B = "#98c379",
-  base0C = "#56b6c2",
-  base0D = "#61afef",
+  base0B = "#a1c181",
+  base0C = "#6eb4bf",
+  base0D = "#74ade8",
   base0E = "#c678dd",
   base0F = "#be5046",
 }
@@ -58,6 +58,7 @@ M.base_16 = {
 M.polish_hl = {
   treesitter = {
     ["@comment"] = {
+      fg = "#787c85",
       italic = true,
       bold = false
     },
@@ -66,8 +67,17 @@ M.polish_hl = {
       bold = true,
     },
     ["@string"] = {
+      fg = "#a1c181",
       italic = true
-    }
+    },
+    ["@keyword"] = { fg = "#c678dd", italic = true },
+    ["@function"] = { fg = "#73ade9" },
+    ["@function.method"] = { fg = "#61afef" },
+    ["@type"] = { fg = "#e5c07b" },
+    ["@variable"] = { fg = "#c8ccd4" },
+    ["@variable.member"] = { fg = "#d07277" },
+    ["@number"] = { fg = "#bf956a" },
+    ["@operator"] = { fg = "#6eb4bf" },
   },
 }
 

@@ -1,0 +1,268 @@
+{
+  "active": "spa0509b478a3943d6e9bf9da19e4beac6",
+  "spaces": {
+    "sp386242890fc1d2a9eebd0f8413d84324": "tb153a11ae453f8f15bb626c2558166bb5",
+    "sp4530b2e7272ca0c49c97c6e2385bfddf": "tb3117f1bc06cb84fca214b14d2703faf6",
+    "spa0509b478a3943d6e9bf9da19e4beac6": "tbb763c385f68a7323ca970e79af1ef10d",
+    "spb18e8e0f587a7debc8d17d488a0bfc86": "tb3620461d6cf19a1db40d9500f76c18f9",
+    "spb4951a0404deb3c7432e83b10abf951c": "tb5a6888b4009e0735caad05fd327a4803",
+    "spdaddddc13cc2e30e3308b8dbe2584cbc": "tb9d21fa791cfc63441c5475b8d7cd3f01"
+  },
+  "tabs": {
+    "tb08dc651f1598bc08aef21222cfaa648f": {
+      "focused": "p1f74a3a8e17730900b8b1a01f5bad863",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb153a11ae453f8f15bb626c2558166bb5": {
+      "focused": "p2ab9633f8775db239b2cb7f98e7f2a09",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb21624ca8103ad077ebab30197785945f": {
+      "focused": "p744e9e85291a60c952a8e9222c5e9f77",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb3117f1bc06cb84fca214b14d2703faf6": {
+      "focused": "pdecb5f179a9b353658c67a6c07f62b68",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb3620461d6cf19a1db40d9500f76c18f9": {
+      "focused": "p4d99bff6e37dc4ebdd44ce05774e424a",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb5a6888b4009e0735caad05fd327a4803": {
+      "focused": "pb37794b485244656f795e14b90e549e5",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb648bf4626b64cc6ebd3793a068d189a8": {
+      "focused": "p9a36784eec3c38b386c253827c119c91",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb6c82f43d4e2e0186540bacfe4ae64655": {
+      "focused": "p22fbdbea42038cd1c051bdd93e2e620a",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tb9d21fa791cfc63441c5475b8d7cd3f01": {
+      "focused": "p33c2ae9b4dbe75d736794a61add8bcd9",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tbb763c385f68a7323ca970e79af1ef10d": {
+      "focused": "p0f10a0927a1d425249559b6baec34858",
+      "before": [
+        "p323b036df4e8bb231f8b6ec16c129136"
+      ],
+      "zoomed": null,
+      "settled": null
+    },
+    "tbf0031a1371d73bd6ba4fe725430a697c": {
+      "focused": "p3dc32c1fe81092293bae44619e1ec645",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tbf87647a4d3c800394de8e743149ffb15": {
+      "focused": "p54610e9dc2255c6d0549cf160c9c4482",
+      "before": [
+        "p361830b6de37a8684f4863cab2e59603",
+        "p60ba16af37407c922132a291d51107fa",
+        "pc62e7beed8555c1e142297816b0b76ec",
+        "p05cc38b07c42800730156b6c6b38ed58",
+        "pa47b6a7a61a601a88cb01c497da8c979"
+      ],
+      "zoomed": null,
+      "settled": null
+    },
+    "tbf991c10fd67d34828f1561bd38e8a40e": {
+      "focused": "pdcfd862cd0abd17e666d3802c0b54cfb",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    },
+    "tbfa0a7a5bbb0026b7bef401f7fb0c79fa": {
+      "focused": "pd64601a7be8a9edb3b1c102b585d400f",
+      "before": [],
+      "zoomed": null,
+      "settled": null
+    }
+  },
+  "recent": [],
+  "attention": {
+    "t1": {
+      "word": null,
+      "seen": true
+    },
+    "t10": {
+      "word": "idle",
+      "seen": true
+    },
+    "t11": {
+      "word": null,
+      "seen": true
+    },
+    "t12": {
+      "word": "idle",
+      "seen": true
+    },
+    "t13": {
+      "word": null,
+      "seen": true
+    },
+    "t14": {
+      "word": null,
+      "seen": true
+    },
+    "t15": {
+      "word": null,
+      "seen": true
+    },
+    "t16": {
+      "word": null,
+      "seen": true
+    },
+    "t17": {
+      "word": null,
+      "seen": true
+    },
+    "t18": {
+      "word": null,
+      "seen": true
+    },
+    "t19": {
+      "word": null,
+      "seen": true
+    },
+    "t1b": {
+      "word": null,
+      "seen": true
+    },
+    "t1c": {
+      "word": null,
+      "seen": true
+    },
+    "t1d": {
+      "word": null,
+      "seen": true
+    },
+    "t1f": {
+      "word": null,
+      "seen": true
+    },
+    "t1g": {
+      "word": null,
+      "seen": true
+    },
+    "t1h": {
+      "word": null,
+      "seen": true
+    },
+    "t1j": {
+      "word": null,
+      "seen": true
+    },
+    "t1k": {
+      "word": null,
+      "seen": true
+    },
+    "t1m": {
+      "word": null,
+      "seen": true
+    },
+    "t1n": {
+      "word": null,
+      "seen": true
+    },
+    "t1p": {
+      "word": null,
+      "seen": true
+    },
+    "t1q": {
+      "word": null,
+      "seen": true
+    },
+    "t1r": {
+      "word": null,
+      "seen": true
+    },
+    "t1s": {
+      "word": null,
+      "seen": true
+    },
+    "t1t": {
+      "word": null,
+      "seen": true
+    },
+    "t1v": {
+      "word": null,
+      "seen": true
+    },
+    "t1w": {
+      "word": null,
+      "seen": true
+    },
+    "t1x": {
+      "word": null,
+      "seen": true
+    },
+    "t1y": {
+      "word": null,
+      "seen": true
+    },
+    "t1z": {
+      "word": null,
+      "seen": true
+    },
+    "t2": {
+      "word": null,
+      "seen": true
+    },
+    "t20": {
+      "word": null,
+      "seen": true
+    },
+    "t3": {
+      "word": null,
+      "seen": true
+    },
+    "t4": {
+      "word": null,
+      "seen": true
+    },
+    "t5": {
+      "word": null,
+      "seen": true
+    },
+    "t6": {
+      "word": null,
+      "seen": true
+    },
+    "t7": {
+      "word": null,
+      "seen": true
+    },
+    "t8": {
+      "word": null,
+      "seen": true
+    },
+    "t9": {
+      "word": null,
+      "seen": true
+    }
+  }
+}

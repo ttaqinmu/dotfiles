@@ -7,13 +7,39 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "features": {
-    "edit_prediction_provider": "copilot"
+  "terminal": {
+    "shell": "system"
+  },
+  "current_line_highlight": "gutter",
+  "cursor_animation": {
+    "enabled": true
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "provider": "copilot"
+  },
+  "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "collaboration_mode": "plan"
+      },
+      "type": "registry"
+    }
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
   },
   "project_panel": {
     "dock": "right"
   },
   "agent": {
+    "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5"
@@ -21,21 +47,21 @@
   },
   "theme": "One Dark Mod",
   "vim_mode": true,
-  "buffer_font_family": "ZedMono Nerd Font Mono",
+  "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 500,
   "buffer_font_features": {
     "liga": true,
     "calt": true,
     "clig": true
   },
-  "ui_font_family": "ZedMono Nerd Font Propo",
+  "ui_font_family": "JetBrains Mono",
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "cursor_blink": false,
   "languages": {
     // "Rust": {

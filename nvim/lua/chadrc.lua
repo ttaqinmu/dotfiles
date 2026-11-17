@@ -5,7 +5,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "dark-nord",
+	theme = "onedarkmod",
 }
 M.ui = {
   statusline = {

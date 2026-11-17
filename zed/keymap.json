@@ -6,6 +6,12 @@
 
 [
   {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-n": "project_panel::ToggleFocus"
+    }
+  },
+  {
     "context": "Editor && vim_mode == insert && (showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
@@ -23,13 +29,9 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "space g g": [
-        "task::Spawn",
-        {
-          "task_name": "lazygit",
-          "reveal_target": "center"
-        }
-      ],
+      "space f f": "file_finder::Toggle",
+      "space f w": "text_finder::Toggle",
+      "space g g": "git_panel::ToggleFocus",
       "shift-k": "editor::Hover",
       "space x": ["workspace::SendKeystrokes", "shift-w shift-q"],
       "space t": ["workspace::SendKeystrokes", "ctrl-tab"]
@@ -39,11 +41,7 @@
     "context": "vim_mode == normal",
     "bindings": {
       "tab": "pane::ActivateNextItem",
-      "shift-tab": "pane::ActivatePreviousItem",
-      "space f": [
-        "task::Spawn",
-        { "task_name": "file_finder", "reveal_target": "center" }
-      ]
+      "shift-tab": "pane::ActivatePreviousItem"
     }
   }
 ]

@@ -12,6 +12,11 @@
 !/waybar/
 !/hypr/
 !/nixos/
+!/helix/
+!/ghostty/
+!/herdr-app/
+!/herdr-core/
+!/omf/
 
 lazy-lock.json
 
